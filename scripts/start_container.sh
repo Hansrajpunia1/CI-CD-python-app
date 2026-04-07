@@ -6,7 +6,7 @@ set -e
 /usr/bin/docker rm flask-app || true 
 
 # Pull the Docker image from Docker Hub
-/usr/bin/docker pull hansrajpunia/sample-python-flask-service:latest
+/usr/bin/docker pull <username>/<image:tag>
 
 # Run the Docker image as a container
-/usr/bin/docker run -d -p 80:5000 --name flask-app hansrajpunia/sample-python-flask-service:latest
+/usr/bin/docker run -d -p 80:5000 --name flask-app <username>/<image:tag>
